@@ -30,6 +30,8 @@ WebDriverWait(driver,10).until(
     EC.presence_of_element_located((By.PARTIAL_LINK_TEXT,"Tech With Tim"))
 )
 
+# driver.implicitly_wait(5)     #will wait for 5 sec, unlike time.sleep() it will not wait for the entire duration even if the task is completed before the duration
+
 link = driver.find_element(By.PARTIAL_LINK_TEXT,"Tech With Tim")
 link.click()
 
