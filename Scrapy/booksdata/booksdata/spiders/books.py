@@ -58,5 +58,5 @@ class BooksSpider(scrapy.Spider):
                 # print("not in stock")
             df = pd.DataFrame.from_dict(d)
             df.to_csv("flipkart.csv",header=True,index=False)
-            # df.to_excel('flipkart.xlsx',header=True,index=False)
-            insertToDb(page,title,rating,price,instock)
+            # df.to_excel('flipkart.xlsx',header=True,index=False)     
+            # insertToDb(page,title,rating,price,instock)
