@@ -15,8 +15,10 @@ app.get('/',(req,res)=>{
 })
 
 app.post('/data', (req, res) => {
-  const inputData = req.body.input;
+  // console.log("hello")
+  const inputData = req.body.value;
   console.log('Received input:', inputData);
+  // res.end(`<h1>${inputData}</h1>`)
   res.sendStatus(200);
 });
 
