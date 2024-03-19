@@ -29,7 +29,6 @@ app.post('/data', (req, res) => {
     console.log(res)
   })
   // console.log("hogaya");
-
   // res.end(`<h1>${inputData}</h1>`)
   res.sendStatus(200);
 });
